@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvSelectionItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:strokeWidth="0dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/primaryColor"
+        android:layout_gravity="center"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_media"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <com.anurupjaiswal.ajmediapicker.basic.dotindicotor.InstaDotView
+        android:id="@+id/dotIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dots_visible="6"
+        android:layout_gravity="center"
+        app:dot_activeColor="@color/primaryColor"
+        app:dot_inactiveColor="@color/white"
+        app:dot_activeSize="8dp"
+        app:dot_inactiveSize="6dp"
+        app:dot_mediumSize="4dp"
+        app:dot_smallSize="2dp"
+        app:dot_margin="4dp" />
+
+
+</LinearLayout>

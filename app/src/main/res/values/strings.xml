@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aj Media Picker</string>
+    <string name="folder_image_desc">Folder Image</string>
+    <string name="pick_media">Pick Media</string>
+
+    <string-array name="folder_names">
+        <item>All Media</item>
+    </string-array>
+</resources>
+
+
+
